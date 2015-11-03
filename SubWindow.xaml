@@ -1,0 +1,62 @@
+﻿<Window x:Class="BlinkV0._01.SubWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="设置" Height="350" Width="525">
+    <Grid>
+        <TabControl Height="318" Margin="0,1,0,0">
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock><Run Text="时间设置"/></TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <Grid>
+                    <Label Content="矫正提醒间隔：（您坐姿不端正时出现的矫正提醒间隔）" Height="26" Margin="14,19,108,246"/>
+                    <Label Content="分钟" Margin="196,50,271,214"/>
+                    <ComboBox x:Name="ComboBox1" SelectedIndex="0" SelectedValuePath="Content" Height="26" Margin="68,50,320,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="123">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="1"/>
+                        <ComboBoxItem Content="3"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="15"/>
+                        <ComboBoxItem Content="20"/>
+                    </ComboBox>
+                    <Label Content="秒" Margin="376,50,91,217"/>
+                    <ComboBox x:Name="ComboBox2" SelectedIndex="3" SelectedValuePath="Content" Height="26" Margin="240,50,148,0" VerticalAlignment="Top" HorizontalAlignment="Center" Width="123">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="20"/>
+                        <ComboBoxItem Content="30"/>
+                        <ComboBoxItem Content="40"/>
+                        <ComboBoxItem Content="50"/>
+                    </ComboBox>
+                    <Label Content="休息提醒间隔：（您在保持正常坐姿时的休息提醒间隔）" Height="26" Margin="14,96,91,169"/>
+                    <Label Content="分钟" Height="27" Width="44" Margin="196,134,271,130"/>
+                    <ComboBox x:Name="ComboBox4" SelectedIndex="0" SelectedValuePath="Content" Height="26" VerticalAlignment="Top" HorizontalAlignment="Center" Width="123" Margin="240,135,148,0">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="5"/>
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="20"/>
+                        <ComboBoxItem Content="30"/>
+                        <ComboBoxItem Content="40"/>
+                        <ComboBoxItem Content="50"/>
+                    </ComboBox>
+                    <Label Content="秒" Height="24" Width="44" Margin="376,135,91,132"/>
+                    <ComboBox x:Name="ComboBox3" SelectedIndex="1" SelectedValuePath="Content" Height="26" VerticalAlignment="Top" HorizontalAlignment="Center" Width="123" Margin="68,134,320,0">
+                        <ComboBoxItem Content="0"/>
+                        <ComboBoxItem Content="10"/>
+                        <ComboBoxItem Content="20"/>
+                        <ComboBoxItem Content="30"/>
+                        <ComboBoxItem Content="40"/>
+                        <ComboBoxItem Content="50"/>
+                    </ComboBox>
+                    <Button Content="确定" Margin="252,238,172,25" Click="Button_Click" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Width="87" />
+                    <Button Content="取消" Margin="358,238,66,25" Click="Button_Click_1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
